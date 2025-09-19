@@ -2,7 +2,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 # Configuatievariabelen
-PRODUCTIEFOLDERPAD = "C:/Users/jurrian/OneDrive - LUISTERPUNTBIBLIOTHEEK VZW/Documenten/Python Scripts/Validatie/EAC/27500/27505/"
+PRODUCTIEFOLDERPAD = ""
 
 # Hulpvariabelen voor ncc.html
 NCCPATH = next(Path(PRODUCTIEFOLDERPAD).rglob('ncc.html'))
