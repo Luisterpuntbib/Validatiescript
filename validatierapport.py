@@ -1,11 +1,5 @@
 import os
 
-'''
-[22-8-25] de volgorde van de variabelen klopt niet waardoor het resultaat niet aan de juiste test wordt gekoppeld in het gemailde validatierapport
-dit komt waarschijnlijk door de nieuwe test die ik later heb toegevoegd aan het metadatatests
-hoe dan ook een structurele oplossing vinden zodat nieuwe tests in de toekomst makkelijker ingeintegreerd kunnen worden
-'''
-
 def normalize_checks(checks):
     '''Messages afkomstig uit foutmeldingen zijn in veel gevallen een list of strings. Deze functie zet lijsten met één string om naar een string'''
     return [check[0] if isinstance(check, list) and len(check) == 1 else check for check in checks]
@@ -167,7 +161,7 @@ def get_luisterpunt_validation_rapport(productiefolder_pad, all_messages, messag
 
     send_mail_message(
         from_addr="ict@luisterpunt.be",
-        to_addr="jurrian.kooiman@luisterpuntbibliotheek.be",
+        to_addr="naam.acchternaam@luisterpuntbibliotheek.be",
         subject="Validatierapport",
         body=html,
         smtp_server='smtp.office365.com'
