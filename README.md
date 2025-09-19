@@ -15,13 +15,21 @@ Inhoud bestandsmap met scripts:
 main.py								verzamelt de lijst met controleresultaten en stuurt het validatierapport aan
 validatierapport.py:				normaliseert resultatenlijst, koppelt resultatenlijst aan vraag, stelt validatierapport samen en stuurt dit per mail
 requirementments.txt:				oplijsting enkele externe libraries
-modules
-├── __init__.py    					hulpbestand bij modules, bevat verder geen code
-├── config.py    					stelt enkele veelgebruikte variabelen vast, waaronder het productiefolderpad
-├── Hulpfuncties.py    				bevat enkele hulpfuncties, zoals voor de conversie van uren naar seconden
-├── Validatie_Aanwezigheid.py    	validatiefuncties die een productiefolder controleren op aanwezigheid van noodzakelijke bestanden en verwijzingen
-├── Validatie_Metadata.py    		validatiefuncties die de vereisten van metadata controleren binnen de productiefolder
-└── Validatie_Tijdscontroles.py    	validatiefuncties die een aantal vereisten rondom tijd en verwijzingen controleren
+
+modules:
+
+init.py: hulpbestand bij modules, bevat verder geen code
+
+config.py: stelt enkele veelgebruikte variabelen vast, waaronder het productiefolderpad
+
+Hulpfuncties.py: bevat enkele hulpfuncties, zoals voor de conversie van uren naar seconden
+
+Validatie_Aanwezigheid.py: validatiefuncties die een productiefolder controleren op aanwezigheid van noodzakelijke bestanden en verwijzingen
+
+Validatie_Metadata.py: validatiefuncties die de vereisten van metadata controleren binnen de productiefolder
+
+Validatie_Tijdscontroles.py: validatiefuncties die een aantal vereisten rondom tijd en verwijzingen controleren
+
 
 Overige bestanden: 'Overzicht functies.xlsx', oude versies van het Powershellscript en de map 'EAC' met daarin testboeken
 
