@@ -9,14 +9,16 @@ Het validatiescript werd oorspronkelijk in Powershell geschreven door Dries Blan
 
 Het script voert een kleine 50 tests of controlefuncties uit die variëren van simpelweg controleren of de bestandsmap een ncc.html bevat tot technischere controles rondom bijvoorbeeld de audiotags van een boek. Iedere controle komt overeen met een functie in het script, eventueel ondersteund door hulpfuncties. Het resultaat van een functie is een string bestaande uit 'OK' of 'Fout' en een toelichting bij het resultaat. Deze strings worden opgelijst en in het validatierapport gematcht met een bijbehorende vraag (bv. 'Is er een ncc.html aanwezig?'). Het toevoegen van meldingen heeft twee flows: ofwel wordt de melding direct toegevoegd aan de lijst, ofwel bestaat de controle uit meerdere meldingen die worden opgelijst en als 'list of strings' worden toegevoegd aan de resultatenlijst.
 
+### Inhoud bestandsmap met scripts
 
-Inhoud bestandsmap met scripts:
+main.py: verzamelt de lijst met controleresultaten en stuurt het validatierapport aan
 
-main.py								verzamelt de lijst met controleresultaten en stuurt het validatierapport aan
-validatierapport.py:				normaliseert resultatenlijst, koppelt resultatenlijst aan vraag, stelt validatierapport samen en stuurt dit per mail
-requirementments.txt:				oplijsting enkele externe libraries
+validatierapport.py: normaliseert resultatenlijst, koppelt resultatenlijst aan vraag, stelt validatierapport samen en stuurt dit per mail
 
-modules:
+requirementments.txt: oplijsting enkele externe libraries
+
+
+#### modules
 
 init.py: hulpbestand bij modules, bevat verder geen code
 
